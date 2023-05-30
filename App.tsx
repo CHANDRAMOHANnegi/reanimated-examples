@@ -26,6 +26,8 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import Intro from './src/00-introduction-to-reanimated';
 import PanBasic from './src/01-pan-gesture-handler-basics';
+import InterPolate from './src/02-interpolate-with-scrollview';
+import InterPolateColor from './src/03-interpolate-color';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -67,7 +69,9 @@ function App(): JSX.Element {
   return (
     <>
       {/* <Intro /> */}
-      <PanBasic />
+      {/* <PanBasic /> */}
+      {/* <InterPolate/> */}
+      <InterPolateColor />
     </>
   );
 }
