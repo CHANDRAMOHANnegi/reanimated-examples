@@ -28,6 +28,8 @@ import Intro from './src/00-introduction-to-reanimated';
 import PanBasic from './src/01-pan-gesture-handler-basics';
 import InterPolate from './src/02-interpolate-with-scrollview';
 import InterPolateColor from './src/03-interpolate-color';
+import { PinchAnimation } from './src/04-pinch-gesture-handler-basics';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -67,12 +69,13 @@ function App(): JSX.Element {
   // };
 
   return (
-    <>
+    <GestureHandlerRootView style={{ flex: 1 }}>
       {/* <Intro /> */}
       {/* <PanBasic /> */}
       {/* <InterPolate/> */}
-      <InterPolateColor />
-    </>
+      {/* <InterPolateColor /> */}
+      <PinchAnimation />
+    </GestureHandlerRootView>
   );
 }
 
